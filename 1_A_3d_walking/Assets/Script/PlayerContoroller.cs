@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 
 [RequireComponent(typeof(CharacterController))]
-public class PlayerContoroller : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 6f;
     public float jumpHeight = 2f;
@@ -16,8 +16,6 @@ public class PlayerContoroller : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -27,7 +25,6 @@ public class PlayerContoroller : MonoBehaviour
             cameraTransform = Camera.main.transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
         isGrounded = controller.isGrounded;

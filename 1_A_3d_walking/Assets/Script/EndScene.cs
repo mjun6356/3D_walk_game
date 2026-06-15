@@ -14,6 +14,9 @@ public class EndScene : MonoBehaviour
     {
         
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        SceneManager.LoadScene("End");
+    }
 
 }
