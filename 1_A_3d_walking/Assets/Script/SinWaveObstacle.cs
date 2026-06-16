@@ -4,7 +4,7 @@ public class SinWaveObstacle : MonoBehaviour
 {
     [SerializeField] private Vector3 moveDirection = Vector3.up; // 움직일 방향
     [SerializeField] private float speed = 2f;                  // 왕복 속도
-    [SerializeField] private float distance = 3f;               // 중심점 기준 이동 반경
+    [SerializeField] private float distance = 6f;               // 중심점 기준 이동 반경
 
     private Vector3 startPosition;
 
