@@ -434,7 +434,7 @@ Transform:
   m_GameObject: {fileID: 210180366}
   serializedVersion: 2
   m_LocalRotation: {x: -0.23074451, y: -0, z: -0, w: 0.97301435}
-  m_LocalPosition: {x: -1.77, y: 8.82, z: 33.48}
+  m_LocalPosition: {x: -1.77, y: 7.85, z: 33.97}
   m_LocalScale: {x: 5.2345, y: 1, z: 7.9865}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2197,6 +2197,7 @@ GameObject:
   - component: {fileID: 1363152966}
   - component: {fileID: 1363152965}
   - component: {fileID: 1363152964}
+  - component: {fileID: 1363152968}
   m_Layer: 0
   m_Name: Cube (12)
   m_TagString: Untagged
@@ -2297,6 +2298,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1363152968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363152963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9903e3f1b3ffc1447a92432295491f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SinWaveObstacle
+  moveDirection: {x: 0, y: 1, z: 0}
+  speed: 2
+  distance: 3
 --- !u!1 &1457886449
 GameObject:
   m_ObjectHideFlags: 0
