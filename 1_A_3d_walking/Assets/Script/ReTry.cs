@@ -1,9 +1,9 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EndScene : MonoBehaviour
+public class ReTry : MonoBehaviour
 {
+    public GameObject reTryButton;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,11 +17,15 @@ public class EndScene : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+
+    public void OnMouseDown()
     {
-        SceneManager.LoadScene("End");
+        reTry();
     }
 
-    
+    private void reTry()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
 
 }

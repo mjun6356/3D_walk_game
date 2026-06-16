@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class DeadZone : MonoBehaviour
 {
@@ -13,9 +14,20 @@ public class DeadZone : MonoBehaviour
     void Update()
     {
 
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RestartScene();
+        }
 
         
     }
+
+    public void RestartScene()
+    {
+        // 현재 활성화된 씬의 이름을 가져와서 다시 로드합니다.
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
